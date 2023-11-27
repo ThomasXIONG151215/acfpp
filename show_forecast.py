@@ -70,27 +70,25 @@ def show_forecast():
     image = Image.open(f'ac_curves_for_training.png')
     st.image(image)
 
-    col1, col2 = st.columns(2)
-    with col1:
-        fig = px.scatter_3d(data, x='x', y='z', z='y', color='class', color_continuous_scale=[(0, 'blue'), (0.5, 'green'), (1, 'red')])
 
-        # Set the background color to white
-        fig.update_layout(scene=dict(bgcolor='white'),
-                        title='气流路径分段归纳'
-                        )
-        
-        st.plotly_chart(fig)
+    fig = px.scatter_3d(data, x='x', y='z', z='y', color='class', color_continuous_scale=[(0, 'blue'), (0.5, 'green'), (1, 'red')])
+
+    # Set the background color to white
+    fig.update_layout(scene=dict(bgcolor='white'),
+                    title='气流路径分段归纳'
+                    )
     
-    with col2:
-        # Create a 3D scatter plot
-        fig = px.scatter_3d(data, x='x', y='z', z='y', color='r2', color_continuous_scale='Blues')
+    st.plotly_chart(fig)
 
-        # Set the background color to white
-        fig.update_layout(scene=dict(bgcolor='white'),
-                        title='温度预测效果'
-                        )
+    # Create a 3D scatter plot
+    fig = px.scatter_3d(data, x='x', y='z', z='y', color='r2', color_continuous_scale='Blues')
 
-        st.plotly_chart(fig)
+    # Set the background color to white
+    fig.update_layout(scene=dict(bgcolor='white'),
+                    title='温度预测效果'
+                    )
+
+    st.plotly_chart(fig)
     
     data = {
     '分段': ['第一段', '第二段', '第三段', '第四段', '第五段', '第六段', '第七段'],
