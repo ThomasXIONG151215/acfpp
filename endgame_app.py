@@ -6,7 +6,7 @@ from show_plan import show_plan
 from show_context import show_context
 import plotly.express as px 
 
-st.title('Project 711')
+st.title('7-11月工作')
 
 with st.sidebar:
     page = st.radio('选择模块',options = ['研究目标','作物长势','温度分布预测','空调流场预测规划','系统选型平台Demo'])
