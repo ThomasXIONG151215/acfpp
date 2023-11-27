@@ -98,7 +98,7 @@ def show_canopy():
     
     #col0, col1 = st.columns(2)
    #with col0:
-    image = Image.open(f'{pictures_address}\{d_s}1.jpg')
+    image = Image.open(f'{d_s}1.jpg')
     st.image(image,use_column_width=True)
     #with col1:
     #    image = Image.open(f'{pictures_address}\{d_s}2.png')
