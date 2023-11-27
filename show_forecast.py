@@ -58,19 +58,17 @@ def show_forecast():
     from PIL import Image
    
     
-    col1,col2 = st.columns(2)
-    with col1:
-        
-        data = pd.read_csv('3d_r2s.csv')
-        image = Image.open(f'factory_streamlines_pixian_ai.png')
-        st.markdown('###### 新设计植物工厂气流特征')
-        st.image(image=image,
-                #caption=caption
-                )
-    with col2:
-        st.markdown('###### CFD设定送风参数')
-        image = Image.open(f'ac_curves_for_training.png')
-        st.image(image)
+
+    data = pd.read_csv('3d_r2s.csv')
+    image = Image.open(f'factory_streamlines.png')
+    st.markdown('###### 新设计植物工厂气流特征')
+    st.image(image=image,
+            #caption=caption
+            )
+
+    st.markdown('###### CFD设定送风参数')
+    image = Image.open(f'ac_curves_for_training.png')
+    st.image(image)
 
     col1, col2 = st.columns(2)
     with col1:
