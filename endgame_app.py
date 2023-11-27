@@ -9,7 +9,7 @@ import plotly.express as px
 st.title('7-11月工作')
 
 with st.sidebar:
-    page = st.radio('选择模块',options = ['研究目标','作物长势','温度分布预测','空调流场预测规划','系统选型平台Demo'])
+    page = st.radio('选择模块',options = ['研究目标','作物长势','温度分布预测','空调流场预测规划','后续计划'])
 
 if page == '研究目标':
     show_context()
@@ -23,5 +23,5 @@ elif page == '温度分布预测':
 elif page == '空调流场预测规划':
     show_optimize()
      
-elif page == '系统选型平台Demo':
+elif page == '后续计划':
     show_plan()
