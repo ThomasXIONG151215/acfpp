@@ -9,4 +9,3 @@ scikit_learn==1.2.2
 scipy==1.11.4
 streamlit==1.28.2
 streamlit_extras==0.3.5
-~treamlit==1.21.0
