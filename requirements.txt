@@ -1,0 +1,12 @@
+graphviz==0.20.1
+keras==2.12.0
+numpy==1.25.2
+opencv_python==4.6.0.66
+pandas==1.5.3
+Pillow==9.4.0
+plotly==5.18.0
+scikit_learn==1.2.2
+scipy==1.11.4
+streamlit==1.28.2
+streamlit_extras==0.3.5
+~treamlit==1.21.0
