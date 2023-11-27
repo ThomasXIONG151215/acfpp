@@ -271,7 +271,6 @@ pypandoc==1.11
 pyparsing==3.0.9
 pypdf==3.9.0
 PyPDF2==2.12.1
-pypdfium2==4.12.0
 PyQt-Fluent-Widgets==0.8.6
 PyQt5==5.15.9
 PyQt5-Frameless-Window==0.2.7
