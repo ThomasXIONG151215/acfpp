@@ -11,14 +11,14 @@ coords_df = pd.DataFrame(coords)
 
 
 # 合并三个速度DataFrame
-v_df_1 = pd.read_excel(r"G:\Emist\Flow_surrogate\factory_with_plant_units_and_leds_simplified\led修正无蒸腾制冷训练v.xlsx"#"G:\Emist\Flow_surrogate\factory3\无蒸腾十天\v_magn_1.xlsx"
+v_df_1 = pd.read_excel(r"led修正无蒸腾制冷训练v.xlsx"#"G:\Emist\Flow_surrogate\factory3\无蒸腾十天\v_magn_1.xlsx"
                        )
-v_df_2 = pd.read_excel(r"G:\Emist\Flow_surrogate\factory_with_plant_units_and_leds_simplified\led修正无蒸腾制冷测试v.xlsx"
+v_df_2 = pd.read_excel(r"led修正无蒸腾制冷测试v.xlsx"
                        )
 
-t_df_1 = pd.read_excel(r"G:\Emist\Flow_surrogate\factory_with_plant_units_and_leds_simplified\led修正无蒸腾制冷训练t.xlsx"#"G:\Emist\Flow_surrogate\factory3\无蒸腾十天\static_t_1.xlsx"
+t_df_1 = pd.read_excel(r"led修正无蒸腾制冷训练t.xlsx"#"G:\Emist\Flow_surrogate\factory3\无蒸腾十天\static_t_1.xlsx"
                        )
-t_df_2 = pd.read_excel(r"G:\Emist\Flow_surrogate\factory_with_plant_units_and_leds_simplified\led修正无蒸腾制冷测试t.xlsx"
+t_df_2 = pd.read_excel(r"led修正无蒸腾制冷测试t.xlsx"
                        )
 
 param_train_table = pd.read_json(r'G:\Emist\Flow_surrogate\param_train_table_0927.json')
