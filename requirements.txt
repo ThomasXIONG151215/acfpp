@@ -363,7 +363,6 @@ tensorboard-plugin-wit==1.8.1
 termcolor==2.3.0
 terminaltables==3.1.10
 textract==1.6.5
-threadpoolctl==3.1.0
 torch==2.0.1+cu118
 torchaudio==2.0.2+cu118
 torchvision==0.15.2+cu118
