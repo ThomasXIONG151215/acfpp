@@ -71,7 +71,7 @@ def show_forecast():
     st.image(image)
 
 
-    fig = px.scatter_3d(data, x='x', y='z', z='y', color='class'])
+    fig = px.scatter_3d(data, x='x', y='z', z='y', color='class')
 
     # Set the background color to white
     fig.update_layout(scene=dict(bgcolor='white'),
