@@ -3,12 +3,12 @@ from PIL import Image
 import pandas as pd 
 
 def show_canopy():
-    pictures_address = 'G:\Emist\Flow_surrogate\种植实验数据\图片重构'
+    #pictures_address = 'G:\Emist\Flow_surrogate\种植实验数据\图片重构'
 
     set = '二分之一'
 
-    image = Image.open(f'{pictures_address}\{set}1.png')
-    image2 = Image.open(f'{pictures_address}\{set}2.png')
+    image = Image.open(f'{set}1.png')
+    image2 = Image.open(f'{set}2.png')
     # Add a caption to the image
     caption = "The canopies of the city"
 
@@ -106,13 +106,13 @@ def show_canopy():
     col2,col3 = st.columns(2)
     
     with col2:
-        image = Image.open(f'{pictures_address}\{d_s}2.png')
+        image = Image.open(f'{d_s}2.png')
         st.image(image)
     with col3:
-        image = Image.open(f'{pictures_address}\{d_s}4.png')
+        image = Image.open(f'{d_s}4.png')
         st.image(image)
     
-    image = Image.open(f'{pictures_address}\{d_s}风洞俯瞰.png')
+    image = Image.open(f'{d_s}风洞俯瞰.png')
     st.image(image)
     
 
