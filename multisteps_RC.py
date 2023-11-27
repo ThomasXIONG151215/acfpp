@@ -90,7 +90,7 @@ for i in range(len(coords_df['编号'])):
 combine_coords_df = pd.DataFrame(combine_coords_df)
 
 import json
-with open(r'G:\Emist\Flow_surrogate\classes.json', 'r') as f:
+with open(r'classes.json', 'r') as f:
     classes = json.load(f)
 
 nodes_dict = classes
