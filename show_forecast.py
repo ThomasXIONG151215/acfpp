@@ -71,7 +71,7 @@ def show_forecast():
     st.image(image)
 
 
-    fig = px.scatter_3d(data, x='x', y='z', z='y', color='class', color_continuous_scale=[(0, 'blue'), (0.5, 'green'), (1, 'red')])
+    fig = px.scatter_3d(data, x='x', y='z', z='y', color='class'])
 
     # Set the background color to white
     fig.update_layout(scene=dict(bgcolor='white'),
@@ -99,6 +99,6 @@ def show_forecast():
     df = pd.DataFrame(data)
 
     # Creating a bar plot using Plotly Express
-    fig = px.bar(df, x='分段', y='平均预测R2',color='color', title='各分段的平均预测R2值',)
+    fig = px.bar(df, x='分段', y='平均预测R2', title='各分段的平均预测R2值',)
 
     st.plotly_chart(fig,theme='streamlit')
