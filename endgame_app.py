@@ -5,6 +5,7 @@ from graphviz import Digraph
 from show_canopy import show_canopy
 from show_forecast import show_forecast
 from show_optimize import show_optimize
+from show_plan import show_plan
 import plotly.express as px 
 
 st.title('Project 711')
@@ -19,4 +20,6 @@ elif page == '温度分布预测':
     
 elif page == '空调流场预测规划':
     show_optimize()
-     
+
+elif page == '系统选型平台Demo':
+    show_plan()
