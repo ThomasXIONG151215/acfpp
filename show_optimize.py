@@ -1198,7 +1198,7 @@ def show_optimize():
         with open('demo_res_rc_params_dict.json','r') as file:
             res_rc_manage.best_params_dict = json.load(file)
             
-        st.success('第一轮方案于流场代理模型均已加载完毕')
+        st.success('第一轮方案与流场代理模型均已加载完毕')
         
         col1,col2 = st.columns(2)
         with col1:
