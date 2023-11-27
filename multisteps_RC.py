@@ -21,7 +21,7 @@ t_df_1 = pd.read_excel(r"led修正无蒸腾制冷训练t.xlsx"#"G:\Emist\Flow_su
 t_df_2 = pd.read_excel(r"led修正无蒸腾制冷测试t.xlsx"
                        )
 
-param_train_table = pd.read_json(r'G:\Emist\Flow_surrogate\param_train_table_0927.json')
+#param_train_table = pd.read_json(r'G:\Emist\Flow_surrogate\param_train_table_0927.json')
 
 v_df_1 = v_df_1[:282]
 print(len(v_df_1))
